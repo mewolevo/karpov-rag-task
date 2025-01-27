@@ -73,7 +73,7 @@ def save_courses(courses, filename="courses_data.json"):
         json.dump(courses, f, ensure_ascii=False, indent=4)
 
 def fetch_courses(BASE_URLS):
-    courses = fetch_all_courses()
+    courses = fetch_all_courses(BASE_URLS)
     if courses:
         save_courses(courses)
     return len(courses)

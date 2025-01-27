@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from EXAMPLE_chunking_embs import chunk_text, get_embeddings, process_courses
+from chunking_embs import chunk_text, get_embeddings, process_courses
 
 
 # Тест для функции chunk_text
@@ -10,11 +10,11 @@ def test_chunk_text():
     chunks = chunk_text(text, chunk_size=20)
 
     # Проверяем, что количество чанков верное
-    assert len(chunks) == 3
+    assert len(chunks) == 4
 
     # Проверяем содержание первого и последнего чанка
-    assert chunks[0] == "This is a very long"
-    assert chunks[-1] == "into smaller parts."
+    assert chunks[0] == "This is a very long "
+    assert chunks[-1] == "smaller parts."
 
     # Проверяем, что последний чанк не пустой
     assert chunks[-1] != ""

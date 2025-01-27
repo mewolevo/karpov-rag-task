@@ -1,6 +1,6 @@
 import pytest
 import requests_mock
-from fetch_courses import fetch_course_data, fetch_all_courses, save_courses
+from fetch_course_data import fetch_course_data, fetch_all_courses, save_courses, fetch_courses
 
 # Мокируем URL для тестов
 BASE_URLS = [

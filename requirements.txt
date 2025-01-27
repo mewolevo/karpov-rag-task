@@ -5,3 +5,5 @@ requests-mock==1.9.3
 numpy
 faiss-cpu
 openai
+make
+sentence_transformers

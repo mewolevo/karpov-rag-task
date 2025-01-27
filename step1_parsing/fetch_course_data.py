@@ -15,8 +15,40 @@ BASE_URLS = \
 "https://karpov.courses/ml-start",
 ]
 
-def fetch_courses(BASE_URLS):
+
+def fetch_course_data(url):
     """
-    Здесь нужно написать решение!
+    Функция для извлечения данных о курсе с конкретной страницы.
     """
+    # Ждем ваше решение здесь!
+
     pass
+
+
+def fetch_all_courses(BASE_URLS=BASE_URLS):
+    """
+    Функция для извлечения данных о курсах с нескольких страниц.
+    """
+    # Ждем ваше решение здесь!
+    pass
+
+
+def save_courses(courses, filename="courses_data.json"):
+    """
+    Сохраняет данные о курсах в файл JSON.
+    """
+    # Ждем ваше решение здесь!
+    pass
+def fetch_courses(BASE_URLS):
+    # Ждем ваше решение здесь!
+    pass
+
+
+if __name__ == "__main__":
+    # Собираем данные с нескольких сайтов
+    courses = fetch_all_courses()
+    if courses:
+        save_courses(courses)
+        print(f"Найдено {len(courses)} курсов. Данные сохранены.")
+    else:
+        print("Курсы не были найдены.")
